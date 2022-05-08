@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              style="@style/Widget.Widget.AppWidget.Container"
+              android:theme="@style/Theme.Widget.AppWidgetContainer"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#549454"
+              android:orientation="horizontal">
+
+    <Button android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:layout_gravity="center"
+            android:text="Abrir App" android:id="@+id/btnAbrirApp"/>
+
+    <LinearLayout android:layout_width="1dp"
+                  android:layout_height="match_parent"
+                  android:background="@android:color/darker_gray"></LinearLayout>
+
+    <LinearLayout android:layout_width="0dp"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical"
+                  android:layout_gravity="center"
+                  android:gravity="center"
+                  android:layout_weight="1">
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Fecha Creación"
+                  android:textSize="18dp"
+                  android:textStyle="bold"/>
+        <TextView
+                style="@style/Widget.Widget.AppWidget.InnerView"
+                android:id="@+id/horaUltimaActualizacion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="19dp"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="8dp" android:layout_marginEnd="8dp" android:layout_marginBottom="8dp"
+                android:layout_centerInParent="true"/>
+    </LinearLayout>
+
+    <!--LinearLayout android:layout_width="1dp"
+                  android:layout_height="match_parent"
+                  android:background="@android:color/darker_gray"></LinearLayout-->
+
+    <!--ImageView android:layout_width="0dp"
+               android:layout_height="60dp"
+               android:id="@+id/imagenWidget"
+               android:layout_gravity="center"
+               android:layout_weight="0.8"/-->
+
+</LinearLayout>

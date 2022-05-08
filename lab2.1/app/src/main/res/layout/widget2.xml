@@ -1,0 +1,42 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                style="@style/Widget.Widget2.AppWidget.Container"
+                android:theme="@style/Theme.Widget2.AppWidgetContainer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+    <Button android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:layout_gravity="center"
+            android:text="Abrir WEB" android:id="@+id/btnAbrirApp" android:background="@color/purple_500"
+            android:backgroundTint="@color/purple_500"/>
+
+    <LinearLayout android:layout_width="1dp"
+                  android:layout_height="match_parent"
+                  android:background="@android:color/darker_gray"></LinearLayout>
+
+    <LinearLayout android:layout_width="0dp"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical"
+                  android:layout_gravity="center"
+                  android:gravity="center"
+                  android:layout_weight="1">
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Hora Creación"
+                  android:textSize="17dp" android:textColor="@color/black"/>
+        <TextView
+                style="@style/Widget.Widget2.AppWidget.InnerView"
+                android:id="@+id/horaUltimaActualizacion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="22dp"
+                android:textStyle="bold|italic"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="8dp" android:layout_marginEnd="8dp" android:layout_marginBottom="8dp"
+                android:layout_centerInParent="true"/>
+    </LinearLayout>
+</LinearLayout>
